@@ -179,7 +179,22 @@ G -->	P[Delete the invalid values, treat as Missing];
 ```
 
 
+#### Filter Data
 
+```mermaid
+graph LR;
+
+A[Fix Invalid Values] --> B[Duplicate data];
+
+A --> C[Extra/Unnecessary rows];
+A --> D[Columns not relevant to analysis];
+A --> E[Dispersed data];
+
+B -->	K[Deduplicate Data/ Remove duplicated data];
+C -->	L[Filter rows to keep only the relevant data.];
+D -->	M[Filter columns-Pick columns relevant to analysis];
+E -->	N[Bring the data together, Group by required keys, aggregate the rest];
+```
 
 
 
