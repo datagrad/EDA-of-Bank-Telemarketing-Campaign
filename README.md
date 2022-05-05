@@ -18,11 +18,12 @@ A --> F[Ordinal : Categorical data in Order]
 
 ```mermaid
 graph LR;
-A[Data & Variable Type] --> B[Numeric Type];
+A[Data & Variable Type] --> B[Numeric Variable];
 
-A --> C[Categorical];
-A --> D[Ordinal Categorical];
-A --> E[Data & Time];
+A --> C[Categorical Variable];
+A --> D[Ordinal Categorical Variable];
+A --> E[Data & Time Variable];
+A --> N[Coordinate Cariable];
 
 B --> F[INT, Float];
 C --> G[Object];
