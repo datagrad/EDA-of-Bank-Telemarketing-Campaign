@@ -17,6 +17,9 @@ A bank has conducted a telemarketing campaign for one of its financial products 
 
 >> Term deposits, also called fixed deposits, are the cash investments made for a specific time period ranging from 1 month to 5 years for predetermined fixed interest rates. The fixed interest rates offered for term deposits are higher than the regular interest rates for savings accounts. The customers receive the total amount (investment plus the interest) at the end of the maturity period. Also, the money can only be withdrawn at the end of the maturity period. Withdrawing money before that will result in penalty charges, and the customer will not receive any interest returns.
 
+> Tools Used: Python Libraries
+>> Pandas: It is a library to deal with dataframes in Python. Pandas is an acronym derived from panel data. It is solely used for data analysis purposes in Python.
+>> NumPy: This library is used for performing numerical operations on a dataset.
 
 
 
@@ -46,4 +49,55 @@ A bank has conducted a telemarketing campaign for one of its financial products 
 | 	poutcome	 | 	This column represents the outcome of the previous reach outs for any of the products(other than term deposits) provided by banks                                                                                                    Unknown - This represents that the customer has not been reached so far       Success - This represents that the previous call was a successful conversion of the customer                                                                                                                Failure - This represents that the customer is not interested in the last product                                                                                                                                                      Other -  This represents that during the previous call, the customer has not given any definite answer	 |
 | 	response	 | 	This column represents whether the customer has opened the term deposit account or not	 |
 
+
+
+
+> Data Types:
+
+
+```mermaid
+graph LR;
+A[Data & Variable Type] --> B[Numeric Type];
+
+A --> C[Categorical];
+A --> D[Ordinal Categorical];
+A --> E[Data & Time];
+
+B --> F[INT, Float];
+C --> G[Object];
+D --> H[Object, Int, Float];
+E --> I[Date and Time];
+
+F --> J[Height, weight, age, temperature];
+G --> K[Size of clothes, months, type of jobs, blood group];
+H --> L[Grades in exam, education level, months, integer ratings];
+I --> M[Date, time, timestamp];
+
+```
+
+
+
+### DATA CLEANING ACTIVITIES
+
+```mermaid
+graph LR;
+a[Fix Rows & Columns] --> b[Fix Missing Values];
+b --> c[Standardise Values];
+c --> d[Fix Invalid Values];
+d --> e[Filter Data];
+
+a --> f[Delete incorrect Rows];
+a --> g[Delete Summary Rows];
+a --> h[Delete Extra Rows];
+```
+
+
+```mermaid
+graph LR;
+a[Checklist for fixing rows:] --> b[Delete summary rows: Total and Subtotal rows];
+
+a --> f[Delete incorrect rows: Header row and footer row];
+a --> g[Delete extra rows: Column number, indicators, blank rows, page number];
+
+```
 
