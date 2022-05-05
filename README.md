@@ -73,6 +73,17 @@ d --> e[Filter Data];
 
 Inconsistency in rows and Columns of data are part and parcel of data handling. Since, data collection has been mostly taken as a byproduct, inconsistency is very common.
 One must go ahead a different approach for handling these inconsistency for row and colums.
+Few examples:
+* Header rows, footer rows
+* Total, subtotal rows
+* Column numbers, indicators, blank rows
+* Column names as blanks, NA, XX etc.
+* X1, X2,C4 which give no information about the column
+* Unidentified columns, irrelevant columns, blank columns 
+* Columns with complete address E.g. address columns containing city, state, country
+* Shifted columns
+
+
 
 
 
@@ -104,6 +115,13 @@ J --> S[Align these columns];
 #### Missing Value Treatment 
 
 Missing values could be because of many reasons. Whenever a data entry part is left optional, people tend to not share the data which can influence an immediate decision. Like a higher salaried person is not very comfortable disclosing their salary in public.
+
+Few examples:
+Other than clearly visible missing values, there are certain values which is equivalent to missing like:
+* blank strings, "NA", "XX", "999" etc
+* Missing time zone, century etc
+
+
 
 ```mermaid
 graph LR;
