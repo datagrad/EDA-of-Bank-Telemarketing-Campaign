@@ -126,3 +126,28 @@ A --> G[Align misaligned columns: The data set may have shifted columns, which y
 
 ```
 
+
+```mermaid
+graph LR;
+A[Fix rows and columns] --> B[Incorrect rows];				
+				
+A --> C[Summary rows];
+A --> D[Extra rows];
+A --> E[Missing Column Names];
+A --> F[Inconsistent column names];
+A --> G[Unnecessary columns];
+A --> H[Columns containing Multiple data values];
+A --> I[No Unique Identifier];
+A --> J[Misaligned columns;
+
+B --> K[Delete];
+C --> L[Delete];
+D --> M[Delete];
+E --> N[Add the column names];
+F --> O[Add  column names that give some information about the data];
+G --> P[Delete];
+H --> Q[Split columns into components];
+I --> R[Combine columns to create unique identifiers e.g. combine City with the State];
+J --> S[Align these columns];
+
+```
