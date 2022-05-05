@@ -91,7 +91,7 @@ a --> g[Delete Summary Rows];
 a --> h[Delete Extra Rows];
 ```
 
-
+### Row Checklist
 ```mermaid
 graph LR;
 a[Checklist for fixing rows:] --> b[Delete summary rows: Total and Subtotal rows];
@@ -101,3 +101,17 @@ a --> g[Delete extra rows: Column number, indicators, blank rows, page number];
 
 ```
 
+### Column Checklist
+
+```mermaid
+graph LR;
+A[Checklist for fixing columns:] --> B[if needed, merge columns for creating unique identifiers, for example, merge the columns State and City into the column Full Address.];				
+				
+A --> 	C	[	Split columns to get more data: Split the Address column to get State and City columns to analyse each separately. 	];
+A --> 	D	[	Add column names: Add column names if missing.	];
+A --> 	E	[	Rename columns consistently: Abbreviations, encoded columns.	];
+A --> 	F	[	Delete columns: Delete unnecessary columns.	];
+A --> 	G	[	Align misaligned columns: The data set may have shifted columns, which you need to align correctly.	];
+
+
+```
