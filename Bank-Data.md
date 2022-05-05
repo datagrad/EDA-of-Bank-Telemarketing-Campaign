@@ -138,8 +138,7 @@ A --> F[Inconsistent column names];
 A --> G[Unnecessary columns];
 A --> H[Columns containing Multiple data values];
 A --> I[No Unique Identifier];
-A --> J[Misaligned columns;
-
+A --> J[Misaligned columns];
 B --> K[Delete];
 C --> L[Delete];
 D --> M[Delete];
