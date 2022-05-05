@@ -54,22 +54,37 @@ Broadly, data sources can be seen as one of the two types:
 flowchart TD
 A[Data Sourcing] --> B[Private Data];
 
+B[Private Data] --> H[Organisation Controlled Dataset];
+
 
 A[Data Sourcing] --> C[Public Data];
+C[Public Data] --> D[Open Websites];
+C[Public Data] --> E[Web Scrapping];
 
-
+D[Open Websites] --> F[Kaggle];
+D[Open Websites] --> G[UCI Machine Learning Repository];
 ```
 
-**Private data:** Private data majorly belongs to an organisation, and there are certain security and privacy concerns attached to it.
-It is used for the companies’ internal analysis purposes in order to gain business and growth insights.
-Examples: telecom data, retail data, banking and medical data.
+
+
+**Private data:** 
+* Private data majorly belongs to an organisation, and there are certain security and privacy concerns attached to it.
+* It is used for the companies’ internal analysis purposes in order to gain business and growth insights.
+* Examples: telecom data, retail data, banking and medical data.
 
  
 
-**Public data:** Public data are available for public use.
-They are offered by many sites such as government websites and public agencies for the purpose of research.
-Accessing this data does not require any special permission or approval.
-There are many programming techniques that are used to fetch public data through code called Data Mining.
+**Public data:** 
+* Public data are available for public use.
+* They are offered by many sites such as government websites and public agencies for the purpose of research.
+* Accessing this data does not require any special permission or approval.
+* There are many programming techniques that are used to fetch public data through code called Data Mining.
+* Some Public Data scorces are:
+  * Kaggle
+  * [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) 
+  * [GitHub - Awesome public datasets](https://github.com/awesomedata/awesome-public-datasets)
+  * [GitHub - datameet](https://github.com/datameet)
+
 
 
 <p align="center">
