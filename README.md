@@ -1,3 +1,42 @@
+## Data Check
+
+> Done using two most prominat python Libraries: **Numpy** & **Pandas**
+
+### Data Types:
+
+ ```mermaid
+flowchart TD
+A[Data Type] --> B[Numeric Type];
+
+B --> C[Continuous: ];
+B --> D[Discrete];
+
+A --> E[Categorical];
+A --> F[Ordinal : Categorical data in Order]
+```
+
+
+```mermaid
+graph LR;
+A[Data & Variable Type] --> B[Numeric Type];
+
+A --> C[Categorical];
+A --> D[Ordinal Categorical];
+A --> E[Data & Time];
+
+B --> F[INT, Float];
+C --> G[Object];
+D --> H[Object, Int, Float];
+E --> I[Date and Time];
+
+F --> J[Height, weight, age, temperature];
+G --> K[Size of clothes, months, type of jobs, blood group];
+H --> L[Grades in exam, education level, months, integer ratings];
+I --> M[Date, time, timestamp];
+
+```
+
+
 ## Data Cleaning
 
 #### What is data cleaning and why it is an important step in EDA?
