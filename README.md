@@ -51,6 +51,147 @@ I --> M[Date, time, timestamp];
   *  _Inconsistent spelling_
 * These irregularities may propagate further and affect the assumptions and analysis based on that dataset and hence hamper the further process of machine learning model building.
 
+### Data Cleaning Checklist
+
+### DATA CLEANING ACTIVITIES
+
+```mermaid
+graph LR;
+a[Fix Rows & Columns] --> b[Fix Missing Values];
+b --> c[Standardise Values];
+c --> d[Fix Invalid Values];
+d --> e[Filter Data];
+
+```
+
+#### Row & Column Checklist with Correction
+
+```mermaid
+graph LR;
+A[Fix rows and columns] --> B[Incorrect rows];				
+				
+A --> C[Summary rows];
+A --> D[Extra rows];
+A --> E[Missing Column Names];
+A --> F[Inconsistent column names];
+A --> G[Unnecessary columns];
+A --> H[Columns containing Multiple data values];
+A --> I[No Unique Identifier];
+A --> J[Misaligned columns];
+B --> K[Delete];
+C --> L[Delete];
+D --> M[Delete];
+E --> N[Add the column names];
+F --> O[Add  column names that give some information about the data];
+G --> P[Delete];
+H --> Q[Split columns into components];
+I --> R[Combine columns to create unique identifiers e.g. combine City with the State];
+J --> S[Align these columns];
+
+```
+
+
+#### Missing Value Treatment 
+
+```mermaid
+graph LR;
+
+A[Missing Values] --> B[Disguised Missing values];
+				
+A --> C[Significant number of Missing values in a row/column];
+A --> D[Partial missing values];
+B --> K[Set values as missing values];
+C --> L[Delete rows, columns];
+D --> M[Fill the missing values with the correct value];
+
+```
+#### Standardization
+
+```mermaid
+graph LR;
+
+A[Standardization] --> B[Standardise Numbers];
+A --> C[Standardise Text];
+
+B --> D[Non-standard units];
+B --> E[Values with varying Scales];
+B --> F[Over-precision];
+B --> G[Remove outliers];
+
+D --> K[Standardise the observations for same consistent units];
+E --> L[Make the scale common. E.g. a percentage scale];
+F --> M[Standardise precision ex: 4.5312341 kgs to 4.53 kgs];
+G --> N[Correct if by mistake else Remove];
+
+C --> H[Extra characters];
+C --> I[Different cases of same words];
+C --> J[Non-standard formats];
+
+H --> O[Remove the extra characters];
+I --> P[Standadise the case/bring to a common case];
+J --> Q[Correct the format/Standardise format for better readability];
+```
+
+
+
+#### Fix Invalid Values
+
+```mermaid
+graph LR;
+A[Fix Invalid Values] --> B[Encoding Issues ];
+				
+A --> C[Incorrect data types];
+A --> D[Correct values not in list];
+A --> E[Wrong structure];
+A --> F[Correct values beyond range];
+A --> G[Validate internal rules];
+
+B -->	K[Encode unicode properly];
+C -->	L[Convert to Correct data type];
+D -->	M[Delete the invalid values, treat as Missing];
+E -->	N[Delete the invalid values, treat as Missing];
+F -->	O[Delete the invalid values, treat as Missing];
+G -->	P[Delete the invalid values, treat as Missing];
+```
+
+
+#### Filter Data
+
+```mermaid
+graph LR;
+
+A[Fix Invalid Values] --> B[Duplicate data];
+
+A --> C[Extra/Unnecessary rows];
+A --> D[Columns not relevant to analysis];
+A --> E[Dispersed data];
+
+B -->	K[Deduplicate Data/ Remove duplicated data];
+C -->	L[Filter rows to keep only the relevant data.];
+D -->	M[Filter columns-Pick columns relevant to analysis];
+E -->	N[Bring the data together, Group by required keys, aggregate the rest];
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### What can be a schematic process of Data Cleaning?
 
