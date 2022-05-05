@@ -1,3 +1,75 @@
+## Data Cleaning
+
+#### What is data cleaning and why it is an important step in EDA?
+
+* Data Cleaning involves getting rid of the irregularities in the data and fix it to improve its quality.
+* Irregularities can be in form of:
+  *  _Missing values_
+  *  _Anomalies/outliers_ 
+  *  _Incorrect format_ 
+  *  _Incorrect header_
+  *  _Inconsistent spelling_
+* These irregularities may propagate further and affect the assumptions and analysis based on that dataset and hence hamper the further process of machine learning model building.
+
+
+#### What can be a schematic process of Data Cleaning?
+
+Data Cleanig steps are difficult to define in a single structured process, and varries on the user approach and dataset provided. But a few checkpoints that can be suggested for the same are:
+* Identifying the data types
+* Fixing the rows and columns
+* Imputing/removing missing values
+* Handling outliers
+* Standardising the values
+* Fixing invalid values
+* Filtering the data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # EDA-of-Bank-Telemarketing-Campaign
 
 ### About EDA
@@ -52,12 +124,12 @@ Broadly, data sources can be seen as one of the two types:
  
  ```mermaid
 flowchart TD
-A[Data Sourcing] --> B[Private Data];
+A[Data Source] --> B[Private Data];
 
 B[Private Data] --> H[Organisation Controlled Dataset];
 
 
-A[Data Sourcing] --> C[Public Data];
+A[Data Source] --> C[Public Data];
 C[Public Data] --> D[Open Websites];
 C[Public Data] --> E[Web Scrapping];
 
