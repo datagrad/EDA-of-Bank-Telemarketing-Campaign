@@ -96,8 +96,8 @@ a --> h[Delete Extra Rows];
 graph LR;
 a[Checklist for fixing rows:] --> b[Delete summary rows: Total and Subtotal rows];
 
-a --> f[Delete incorrect rows: Header row and footer row];
-a --> g[Delete extra rows: Column number, indicators, blank rows, page number];
+a --> c[Delete incorrect rows: Header row and footer row];
+a --> d[Delete extra rows: Column number, indicators, blank rows, page number];
 
 ```
 
@@ -105,7 +105,7 @@ a --> g[Delete extra rows: Column number, indicators, blank rows, page number];
 
 ```mermaid
 graph LR;
-A[**Checklist for fixing columns**] --> B[if needed, merge columns for creating unique identifiers];
+A[Checklist for fixing columns] --> B[if needed, merge columns for creating unique identifiers];
 A --> C[Split columns to get more data if needed];
 A --> D[Add column names if missing];
 A --> E[Rename columns consistently];
