@@ -105,13 +105,24 @@ a --> g[Delete extra rows: Column number, indicators, blank rows, page number];
 
 ```mermaid
 graph LR;
-A[Checklist for fixing columns:] --> B[if needed, merge columns for creating unique identifiers, for example, merge the columns State and City into the column Full Address.];				
-				
-A --> 	C	[	Split columns to get more data: Split the Address column to get State and City columns to analyse each separately. 	];
-A --> 	D	[	Add column names: Add column names if missing.	];
-A --> 	E	[	Rename columns consistently: Abbreviations, encoded columns.	];
-A --> 	F	[	Delete columns: Delete unnecessary columns.	];
-A --> 	G	[	Align misaligned columns: The data set may have shifted columns, which you need to align correctly.	];
+A[**Checklist for fixing columns**] --> B[if needed, merge columns for creating unique identifiers];
+A --> C[Split columns to get more data if needed];
+A --> D[Add column names if missing];
+A --> E[Rename columns consistently];
+A --> F[Delete unnecessary columns];
+A --> G[Align misaligned columns];
+```
 
+For banking Dataset =>
+
+```mermaid
+graph LR;
+A[Checklist for fixing columns:] --> B[if needed, merge columns for creating unique identifiers, for example, merge the columns State and City into the column Full Address.];
+A --> C[Split columns to get more data: Split the Address column to get State and City columns to analyze each separately.];
+A --> D[Add column names: Add column names if missing.];
+A --> E[Rename columns consistently: Abbreviations, encoded columns.];
+A --> F[Delete columns: Delete unnecessary columns.];
+A --> G[Align misaligned columns: The data set may have shifted columns, which you need to align correctly.	];
 
 ```
+
