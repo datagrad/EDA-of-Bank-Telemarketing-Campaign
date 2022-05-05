@@ -53,7 +53,12 @@ I --> M[Date, time, timestamp];
 
 ### Data Cleaning Checklist
 
-### DATA CLEANING ACTIVITIES
+Data Cleaning can be majorly grouped into 5 Subtask:
+1. Fixing rows and Columns for consistency in data
+2. Fixing the missing values
+3. Standardizing the Values for consistency and easy to understand in data
+4. Fixing any invalid values like outliners
+5. Filtering the data for analysis 
 
 ```mermaid
 graph LR;
@@ -65,6 +70,11 @@ d --> e[Filter Data];
 ```
 
 #### Row & Column Checklist with Correction
+
+Inconsistency in rows and Columns of data are part and parcel of data handling. Since, data collection has been mostly taken as a byproduct, inconsistency is very common.
+One must go ahead a different approach for handling these inconsistency for row and colums.
+
+
 
 ```mermaid
 graph LR;
@@ -93,6 +103,8 @@ J --> S[Align these columns];
 
 #### Missing Value Treatment 
 
+Missing values could be because of many reasons. Whenever a data entry part is left optional, people tend to not share the data which can influence an immediate decision. Like a higher salaried person is not very comfortable disclosing their salary in public.
+
 ```mermaid
 graph LR;
 
@@ -105,7 +117,18 @@ C --> L[Delete rows, columns];
 D --> M[Fill the missing values with the correct value];
 
 ```
+
+
 #### Standardization
+
+Standardization is very important in the later stage of analysis as well as machine learning. It could be conversion from a wide range of Unit to a central and well understood unit, like opting for distance in km.
+Some example of Standardization are:
+* Convert lbs to kgs, miles/hr to km/hr
+* A column containing marks in subjects, with some subject marks out of 50 and others out of 100
+* Abnormally High and Low values
+* Common prefix/suffix, leading/trailing/multiple spaces
+* Uppercase, lowercase, Title Case, Sentence case, etc : “Modi, Narendra"" to “Narendra Modi""
+
 
 ```mermaid
 graph LR;
@@ -136,6 +159,21 @@ J --> Q[Correct the format/Standardise format for better readability];
 
 #### Fix Invalid Values
 
+
+Few invalid values examples are:
+
+* Number stored as a string: "12,300"
+* Date stored as a string: "2013-Aug"
+* String stored as a number: PIN Code "110001" stored as 110001
+* Non-existent country, PIN code
+* Phone number with over 10 digits
+* Temperature less than -273° C (0° K)
+* Gross sales > Net sales
+* Date of delivery > Date of ordering
+* If Title is "Mr" then Gender is "M"
+
+
+
 ```mermaid
 graph LR;
 A[Fix Invalid Values] --> B[Encoding Issues ];
@@ -156,6 +194,15 @@ G -->	P[Delete the invalid values, treat as Missing];
 
 
 #### Filter Data
+
+In certain cases, we may require to filter data after all the above steps to ensure our sample of analysis is correct. These could be because of reasons like:
+* Identical rows, rows where some columns are identical
+* Rows that are not required in the analysis. E.g if observations before or after a particular date only are required for analysis, other rows become unnecessary
+* Columns that are not needed for analysis e.g. Personal Detail columns such as Address, phone column in a dataset
+* Parts of data required for analysis stored in different files or part of different datasets
+
+
+
 
 ```mermaid
 graph LR;
